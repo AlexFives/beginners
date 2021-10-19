@@ -1,0 +1,1 @@
+/usr/bin/c++ -g CMakeFiles/beginners.dir/main.cpp.o CMakeFiles/beginners.dir/lection_3_functions/globals.cpp.o -o beginners 

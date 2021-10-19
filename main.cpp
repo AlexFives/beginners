@@ -1,14 +1,47 @@
-#include "lection_2_stl/iostream.h"
-#include "lection_2_stl/strings.h"
-#include "lection_2_stl/utility.h"
-#include "lection_2_stl/containers.h"
-#include "lection_2_stl/set_map.h"
+#include "lection_3_functions/funcs.h"
 
 int main() {
-    iostreamDemo();
-//    stringDemo();
-//    pairDemo();
-//    vectorDemo();
-//    setMapDemo();
+    // default
+    printHelloWorld();
+    string name;
+    cin >> name;
+    printName1(name);
+    printName2(name);
+    printName3(name);
+    // doesn't work with variables
+    printName4("Name");
+    printName5("Name");
+    char *p_name = "P_NAME"; // pointer
+    printName1(p_name);
+//    printName2(p_name); error!
+    printName3(p_name);
+    printName4(p_name);
+    printName5(p_name);
+    cout << endl;
+    // extern
+    cout << EXTERN_VAR << ' ' << PI << endl;
+    int a = 10, b = 20;
+    int result = inlineIntSum(a, b);
+    float c = 10., d = 20.;
+    float f_result = ExternInlineFloatSum(c, d);
+    printf("%d %f\n", result, f_result);
+    cout << endl;
+    // templates
+    string s1 = "Hello, ";
+    string s2 = "world!";
+    string string_result = sum(s1, s2);
+    int int_result = sum(a, b);
+    float float_result = sum(c, d);
+    cout << int_result << ' ' << float_result << ' ' << string_result << endl;
+    auto not_auto_result = sumNotAuto<float>(a, d);
+    printf("%f\n", not_auto_result);
+    cout << endl;
+    // pointers magic
+    cout << ampersand_func() << endl;
+    ampersand_func() = 223;
+    cout << ampersand_func() << endl;
+    cout << *star_func() << endl;
+    *star_func() = 1000;
+    cout << *star_func() << endl;
     return 0;
 }
