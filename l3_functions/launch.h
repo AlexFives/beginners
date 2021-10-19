@@ -10,6 +10,11 @@ void launch3() {
     printName1(name);
     printName2(name);
     printName3(name);
+    const string const_name = "CONST_NAME";
+    printName1(const_name);
+//    printName2(const_name); error!
+    printName3(const_name);
+    // &&
     // doesn't work with variables
     printName4("Name");
     printName5("Name");

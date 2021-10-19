@@ -82,10 +82,16 @@
 				</MakeCommands>
 			</Target>
 		</Build>
-		<Unit filename="/home/alexfives/CLionProjects/beginners/lection_3_functions/funcs.h">
+		<Unit filename="/home/alexfives/CLionProjects/beginners/hello_world.cpp">
 			<Option target="beginners"/>
 		</Unit>
-		<Unit filename="/home/alexfives/CLionProjects/beginners/lection_3_functions/globals.cpp">
+		<Unit filename="/home/alexfives/CLionProjects/beginners/l1_syntax">
+			<Option target="beginners"/>
+		</Unit>
+		<Unit filename="/home/alexfives/CLionProjects/beginners/l2_stl">
+			<Option target="beginners"/>
+		</Unit>
+		<Unit filename="/home/alexfives/CLionProjects/beginners/l3_functions">
 			<Option target="beginners"/>
 		</Unit>
 		<Unit filename="/home/alexfives/CLionProjects/beginners/main.cpp">

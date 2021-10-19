@@ -79,29 +79,29 @@ CMakeFiles/beginners.dir/main.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/beginners.dir/main.cpp.s"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/alexfives/CLionProjects/beginners/main.cpp -o CMakeFiles/beginners.dir/main.cpp.s
 
-CMakeFiles/beginners.dir/lection_3_functions/globals.cpp.o: CMakeFiles/beginners.dir/flags.make
-CMakeFiles/beginners.dir/lection_3_functions/globals.cpp.o: ../lection_3_functions/globals.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/alexfives/CLionProjects/beginners/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/beginners.dir/lection_3_functions/globals.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/beginners.dir/lection_3_functions/globals.cpp.o -c /home/alexfives/CLionProjects/beginners/lection_3_functions/globals.cpp
+CMakeFiles/beginners.dir/hello_world.cpp.o: CMakeFiles/beginners.dir/flags.make
+CMakeFiles/beginners.dir/hello_world.cpp.o: ../hello_world.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/alexfives/CLionProjects/beginners/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/beginners.dir/hello_world.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/beginners.dir/hello_world.cpp.o -c /home/alexfives/CLionProjects/beginners/hello_world.cpp
 
-CMakeFiles/beginners.dir/lection_3_functions/globals.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/beginners.dir/lection_3_functions/globals.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/alexfives/CLionProjects/beginners/lection_3_functions/globals.cpp > CMakeFiles/beginners.dir/lection_3_functions/globals.cpp.i
+CMakeFiles/beginners.dir/hello_world.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/beginners.dir/hello_world.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/alexfives/CLionProjects/beginners/hello_world.cpp > CMakeFiles/beginners.dir/hello_world.cpp.i
 
-CMakeFiles/beginners.dir/lection_3_functions/globals.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/beginners.dir/lection_3_functions/globals.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/alexfives/CLionProjects/beginners/lection_3_functions/globals.cpp -o CMakeFiles/beginners.dir/lection_3_functions/globals.cpp.s
+CMakeFiles/beginners.dir/hello_world.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/beginners.dir/hello_world.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/alexfives/CLionProjects/beginners/hello_world.cpp -o CMakeFiles/beginners.dir/hello_world.cpp.s
 
 # Object files for target beginners
 beginners_OBJECTS = \
 "CMakeFiles/beginners.dir/main.cpp.o" \
-"CMakeFiles/beginners.dir/lection_3_functions/globals.cpp.o"
+"CMakeFiles/beginners.dir/hello_world.cpp.o"
 
 # External object files for target beginners
 beginners_EXTERNAL_OBJECTS =
 
 beginners: CMakeFiles/beginners.dir/main.cpp.o
-beginners: CMakeFiles/beginners.dir/lection_3_functions/globals.cpp.o
+beginners: CMakeFiles/beginners.dir/hello_world.cpp.o
 beginners: CMakeFiles/beginners.dir/build.make
 beginners: CMakeFiles/beginners.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/alexfives/CLionProjects/beginners/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX executable beginners"

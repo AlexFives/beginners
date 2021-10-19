@@ -1,5 +1,5 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/beginners.dir/lection_3_functions/globals.cpp.o"
+  "CMakeFiles/beginners.dir/hello_world.cpp.o"
   "CMakeFiles/beginners.dir/main.cpp.o"
   "beginners"
   "beginners.pdb"

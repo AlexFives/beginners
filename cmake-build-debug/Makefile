@@ -129,29 +129,29 @@ beginners/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/beginners.dir/build.make CMakeFiles/beginners.dir/build
 .PHONY : beginners/fast
 
-lection_3_functions/globals.o: lection_3_functions/globals.cpp.o
-.PHONY : lection_3_functions/globals.o
+hello_world.o: hello_world.cpp.o
+.PHONY : hello_world.o
 
 # target to build an object file
-lection_3_functions/globals.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/beginners.dir/build.make CMakeFiles/beginners.dir/lection_3_functions/globals.cpp.o
-.PHONY : lection_3_functions/globals.cpp.o
+hello_world.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/beginners.dir/build.make CMakeFiles/beginners.dir/hello_world.cpp.o
+.PHONY : hello_world.cpp.o
 
-lection_3_functions/globals.i: lection_3_functions/globals.cpp.i
-.PHONY : lection_3_functions/globals.i
+hello_world.i: hello_world.cpp.i
+.PHONY : hello_world.i
 
 # target to preprocess a source file
-lection_3_functions/globals.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/beginners.dir/build.make CMakeFiles/beginners.dir/lection_3_functions/globals.cpp.i
-.PHONY : lection_3_functions/globals.cpp.i
+hello_world.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/beginners.dir/build.make CMakeFiles/beginners.dir/hello_world.cpp.i
+.PHONY : hello_world.cpp.i
 
-lection_3_functions/globals.s: lection_3_functions/globals.cpp.s
-.PHONY : lection_3_functions/globals.s
+hello_world.s: hello_world.cpp.s
+.PHONY : hello_world.s
 
 # target to generate assembly for a file
-lection_3_functions/globals.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/beginners.dir/build.make CMakeFiles/beginners.dir/lection_3_functions/globals.cpp.s
-.PHONY : lection_3_functions/globals.cpp.s
+hello_world.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/beginners.dir/build.make CMakeFiles/beginners.dir/hello_world.cpp.s
+.PHONY : hello_world.cpp.s
 
 main.o: main.cpp.o
 .PHONY : main.o
@@ -186,9 +186,9 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... beginners"
-	@echo "... lection_3_functions/globals.o"
-	@echo "... lection_3_functions/globals.i"
-	@echo "... lection_3_functions/globals.s"
+	@echo "... hello_world.o"
+	@echo "... hello_world.i"
+	@echo "... hello_world.s"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"

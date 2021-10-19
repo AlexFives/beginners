@@ -8,7 +8,7 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/home/alexfives/CLionProjects/beginners/lection_3_functions/globals.cpp" "/home/alexfives/CLionProjects/beginners/cmake-build-debug/CMakeFiles/beginners.dir/lection_3_functions/globals.cpp.o"
+  "/home/alexfives/CLionProjects/beginners/hello_world.cpp" "/home/alexfives/CLionProjects/beginners/cmake-build-debug/CMakeFiles/beginners.dir/hello_world.cpp.o"
   "/home/alexfives/CLionProjects/beginners/main.cpp" "/home/alexfives/CLionProjects/beginners/cmake-build-debug/CMakeFiles/beginners.dir/main.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
