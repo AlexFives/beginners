@@ -10,3 +10,5 @@ void stringMETHODS(string &);
 void stringOPERATORS(string &, string &);
 void stringIO();
 void stringDemo();
+
+#include "strings.cpp"

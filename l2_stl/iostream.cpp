@@ -1,15 +1,13 @@
-#include "iostream.h"
-
 void iostreamDemo() {
     istreamDemo();
-//    ostreamDemo();
+    ostreamDemo();
 }
 
 void istreamDemo() {
     const int N = 13; // Hello, world! = 13 chars
-//    istreamDemoCIN(N);
-//    istreamDemoGET(N);
-//    istreamDemoGETLINE(N);
+    istreamDemoCIN(N);
+    istreamDemoGET(N);
+    istreamDemoGETLINE(N);
     istreamDemoSCANF(N);
 }
 

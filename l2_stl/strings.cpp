@@ -1,5 +1,3 @@
-#include "strings.h"
-
 void stringDemo() {
     string str1 = "Hello,";
     string str2("world!");

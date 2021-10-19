@@ -19,3 +19,5 @@ void ostreamDemoPRINTF(char[], const int &);
 void istreamDemo();
 void ostreamDemo();
 void iostreamDemo();
+
+#include "iostream.cpp"

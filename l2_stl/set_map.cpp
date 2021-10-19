@@ -1,5 +1,3 @@
-#include "set_map.h"
-
 void setMapDemo() {
     setDemo();
     mapDemo();

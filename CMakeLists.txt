@@ -3,4 +3,4 @@ project(beginners)
 
 set(CMAKE_CXX_STANDARD 17)
 
-add_executable(beginners main.cpp lection_3_functions/funcs.h lection_3_functions/globals.cpp)
+add_executable(beginners main.cpp hello_world.cpp l1_syntax l2_stl l3_functions)

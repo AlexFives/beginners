@@ -20,3 +20,5 @@ void mapDemoMAP();
 void mapDemo();
 
 void setMapDemo();
+
+#include "set_map.cpp"

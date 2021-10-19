@@ -22,3 +22,5 @@ typedef vector<int> VEC; // <int> - template
 void vectorMETHODS(VEC &);
 void vectorOPERATORS(VEC &);
 void vectorDemo();
+
+#include "containers.cpp"

@@ -1,3 +1,5 @@
+#pragma once
+
 #include <iostream>
 
 using namespace std;
@@ -109,28 +111,6 @@ void switchcase(int a, int b) {
             cout << a + b << endl;
             break;
     }
-}
-
-int main() {
-    /*
-     start is here
-     and this is multiline comment
-     */
-    variableBytes();
-    operators();
-
-    int input1, input2, n;
-    cin >> input1 >> input2 >> n;
-    ifelse(input1, input2);
-    cout << endl;
-    cycles(n);
-    cout << endl;
-    int a, b;
-    cin >> a >> b;
-    switchcase(a, b);
-    cout << endl;
-
-    return 0;
 }
 
 void operators() {

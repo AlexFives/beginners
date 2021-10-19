@@ -1,5 +1,3 @@
-#include "utility.h"
-
 void pairDemo() {
     pair<int, float> pair1;
     pair1.first = 10;

@@ -14,10 +14,10 @@ int fact(int n) {
     return result;
 }
 
-int main() {
+//int main() {
 //    cout << "Hello, world!" << endl;
 //    cout << "Hello" << ',' << ' ' << "world" << '!' << endl;
 //    printf("Hello, world!");
-    print(1);
-    return 0;
-}
+//    print(1);
+//    return 0;
+//}
