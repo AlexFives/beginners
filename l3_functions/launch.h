@@ -31,22 +31,30 @@ void launch3() {
     int sum_of_2_ints = int_sum(1, 2);
     printRange(0, 5); // function has 3 parameters, but it can get only 2, because the 3rd parameter has default value
     printRange(0, 10, 2); // the 3rd parameter is 2, not default 1
+    cout << endl;
 
     // return
     input();
+    cout << endl;
 
     // recursion
     uint64_t fact_5 = factorial(5);
     someRecursiveFunc(1);
+    cout << endl;
+
+    // inline
+    int a = 10, b = 20;
+    int result = inlineIntSum(a, b);
+    printf("%d\n", result);
+    cout << endl;
 
     // extern
     cout << EXTERN_VAR << ' ' << PI << endl;
-    int a = 10, b = 20;
-    int result = inlineIntSum(a, b);
     float c = 10., d = 20.;
     float f_result = ExternInlineFloatSum(c, d);
-    printf("%d %f\n", result, f_result);
+    printf("%f\n", f_result);
     cout << endl;
+
     // templates
     string s1 = "Hello, ";
     string s2 = "world!";
@@ -57,6 +65,7 @@ void launch3() {
     auto not_auto_result = sumNotAuto<float>(a, d);
     printf("%f\n", not_auto_result);
     cout << endl;
+
     // pointers magic
     cout << ampersand_func() << endl;
     ampersand_func() = 223;

@@ -107,7 +107,8 @@ void input() {
     cin >> temp;
     if (temp == 0) {
         cout << "Write another value!\n";
-        return;
+        return input();
+//        return;
     }
     int password;
     password = 10 * temp / 5 * 3 * temp;
@@ -133,7 +134,7 @@ void input() {
 // recursions
 uint64_t factorial(int n) {
     if (n < 2) return 1; // base part
-    return factorial(n - 1); // recursion part
+    return n * factorial(n - 1); // recursion part
 }
 
 void someRecursiveFunc(const int &&i = 0) {
