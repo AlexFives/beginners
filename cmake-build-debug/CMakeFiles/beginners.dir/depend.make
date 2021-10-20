@@ -4,19 +4,4 @@
 CMakeFiles/beginners.dir/hello_world.cpp.o: \
  ../hello_world.cpp
 CMakeFiles/beginners.dir/main.cpp.o: \
- ../l1_syntax/launch.h \
- ../l1_syntax/syntax.h \
- ../l2_stl/containers.cpp \
- ../l2_stl/containers.h \
- ../l2_stl/iostream.cpp \
- ../l2_stl/iostream.h \
- ../l2_stl/launch.h \
- ../l2_stl/set_map.cpp \
- ../l2_stl/set_map.h \
- ../l2_stl/strings.cpp \
- ../l2_stl/strings.h \
- ../l2_stl/utility.cpp \
- ../l2_stl/utility.h \
- ../l3_functions/funcs.h \
- ../l3_functions/launch.h \
  ../main.cpp
