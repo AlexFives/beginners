@@ -51,7 +51,7 @@ void launch3() {
     // extern
     cout << EXTERN_VAR << ' ' << PI << endl;
     float c = 10., d = 20.;
-    float f_result = ExternInlineFloatSum(c, d);
+    float f_result = externInlineFloatSum(c, d);
     printf("%f\n", f_result);
     cout << endl;
 

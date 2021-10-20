@@ -160,7 +160,7 @@ inline int inlineIntSum(const int &a, const int &b) {
 extern double EXTERN_VAR = 13.0;
 extern const double PI;
 
-extern inline float ExternInlineFloatSum(const float &a, const float &b) {
+extern inline float externInlineFloatSum(const float &a, const float &b) {
     return a + b;
 }
 
