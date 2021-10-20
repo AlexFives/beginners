@@ -1,7 +1,7 @@
 #pragma once
 
 /*
- here i declare global vars and functions!
+ here global vars and functions were declared!
  */
 
 extern double EXTERN_VAR;
