@@ -61,6 +61,11 @@ void printName3(const string &name) {
     cout << "Hello, " << name << endl;
 }
 
+// useless!
+//void printName(const string name) {
+//    cout << "Hello, " << name << endl;
+//}
+
 void printName4(string &&name) {
     // name isn't variable
 
@@ -86,17 +91,71 @@ int int_sum(const int &a, const int &b) {
     return a + b;
 }
 
+// default values for parameters
+//void printRange(const int&, const int&, const int&);
+void printRange(const int &begin, const int &end, const int &step = 1) {
+    if (begin >= end) return;
+    for (int i = begin; i < end; i += step) cout << i << ' ';
+    cout << endl;
+}
+//void printRange(int begin = 0, const int &end, const int &step = 1) {...} - error!
 
 // magic words:
+// return and recursion
+void input() {
+    int temp;
+    cin >> temp;
+    if (temp == 0) {
+        cout << "Write another value!\n";
+        return;
+    }
+    int password;
+    password = 10 * temp / 5 * 3 * temp;
+    cout << "Password: " << password << endl;
+}
+// same as this function:
+/*
+void input() {
+    int temp;
+    cin >> temp;
+    if (temp == 0) {
+        cout << "Write another value!\n";
+        return;
+    }
+    else {
+        int password;
+        password = 10 * temp / 5 * 3 * temp;
+        cout << "Password: " << password << endl;
+    }
+}
+*/
+
+// recursions
+uint64_t factorial(int n) {
+    if (n < 2) return 1; // base part
+    return factorial(n - 1); // recursion part
+}
+
+void someRecursiveFunc(const int &&i = 0) {
+    if (i > 5) {
+        cout << endl;
+        return;
+    }
+    cout << i << ' ';
+    someRecursiveFunc(i + 1);
+}
+
+
 // inline int inlineIntSum(const int&, const int &b);
 // inline word says to the compiler to paste this func in code! (speed, optimization)
 inline int inlineIntSum(const int &a, const int &b) {
     return a + b;
 }
 
+
 // extern
-// global variables and functions are declared in globals.cpp
-// extern allows to use extern-objects from globals.cpp in the whole project
+// global variables and functions are declared in globals.h
+// extern allows to use extern-objects from globals.h in the whole project
 extern double EXTERN_VAR = 13.0;
 extern const double PI;
 

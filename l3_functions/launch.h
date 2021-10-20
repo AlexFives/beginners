@@ -3,7 +3,7 @@
 #include "funcs.h"
 
 void launch3() {
-    // default
+    // about functions
     printHelloWorld();
     string name;
     cin >> name;
@@ -14,6 +14,7 @@ void launch3() {
     printName1(const_name);
 //    printName2(const_name); error!
     printName3(const_name);
+
     // &&
     // doesn't work with variables
     printName4("Name");
@@ -25,6 +26,19 @@ void launch3() {
     printName4(p_name);
     printName5(p_name);
     cout << endl;
+
+    // multiple parameters and default values
+    int sum_of_2_ints = int_sum(1, 2);
+    printRange(0, 5); // function has 3 parameters, but it can get only 2, because the 3rd parameter has default value
+    printRange(0, 10, 2); // the 3rd parameter is 2, not default 1
+
+    // return
+    input();
+
+    // recursion
+    uint64_t fact_5 = factorial(5);
+    someRecursiveFunc(1);
+
     // extern
     cout << EXTERN_VAR << ' ' << PI << endl;
     int a = 10, b = 20;

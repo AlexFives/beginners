@@ -5,6 +5,6 @@
 int main() {
 //    launch1();
 //    launch2();
-//    launch3();
+    launch3();
     return 0;
 }

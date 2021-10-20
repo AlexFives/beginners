@@ -1,3 +1,5 @@
+#pragma once
+
 /*
  here i declare global vars and functions!
  */
