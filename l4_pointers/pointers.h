@@ -117,6 +117,7 @@ void pointer2pointer2pointer() {
 }
 
 void void_pointer() {
+
     void *p_void = &p_num;
     p_void = p_p_num;
     p_void = &num;

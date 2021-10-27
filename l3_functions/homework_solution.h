@@ -57,22 +57,23 @@ uint64_t fib_O1(int n) {
     return (uint64_t) round(pow(phi, n) / sqrt(5));
 }
 
-//int main() {
-////    int a[10] = {9, 7, 8, 6, 4, 5, 3, 2, 0, 1};
-////    vector<int> a = {9, 7, 8, 6, 4, 5, 3, 2, 0, 1};
-////    quicksort(0, 10, a);
-////    for (int item : a) cout << item << ' ';
-////    cout << endl;
-////    int pos = binarySearch(4, a, 10);
-////    cout << pos << endl;
-////    for (int i = 0; i < 40; i++) {
-////        uint64_t fib = fib_On(i);
-////        cout << fib << ' ';
-////    }
-////    cout << endl;
-////    for (int i = 0; i < 40; i++) {
-////        uint64_t fib = fib_O1(i);
-////        cout << fib << ' ';
-////    }
-////    cout << endl;
-//}
+int main() {
+//    int a[10] = {9, 7, 8, 6, 4, 5, 3, 2, 0, 1};
+//    vector<int> a = {9, 7, 8, 6, 4, 5, 3, 2, 0, 1};
+//    quicksort(0, 10, a);
+//    for (int item : a) cout << item << ' ';
+//    cout << endl;
+//    int pos = binarySearch(4, a, 10);
+//    cout << pos << endl;
+//    for (int i = 0; i < 40; i++) {
+//        uint64_t fib = fib_On(i);
+//        cout << fib << ' ';
+//    }
+//    cout << endl;
+//    for (int i = 0; i < 40; i++) {
+//        uint64_t fib = fib_O1(i);
+//        cout << fib << ' ';
+//    }
+//    cout << endl;
+    int a[2] = {}
+}
