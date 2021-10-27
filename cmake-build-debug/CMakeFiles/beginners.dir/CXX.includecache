@@ -6,9 +6,15 @@
 
 #IncludeRegexTransform: 
 
-/home/alexfives/CLionProjects/beginners/main.cpp
+/home/alexfives/CLionProjects/beginners/l1_syntax/homework_solution.h
 iostream
 -
 cmath
 -
+
+/home/alexfives/CLionProjects/beginners/main.cpp
+iostream
+-
+l1_syntax/homework_solution.h
+/home/alexfives/CLionProjects/beginners/l1_syntax/homework_solution.h
 

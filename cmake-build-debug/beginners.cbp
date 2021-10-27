@@ -88,10 +88,16 @@
 		<Unit filename="/home/alexfives/CLionProjects/beginners/l1_syntax">
 			<Option target="beginners"/>
 		</Unit>
+		<Unit filename="/home/alexfives/CLionProjects/beginners/l1_syntax/homework_solution.h">
+			<Option target="beginners"/>
+		</Unit>
 		<Unit filename="/home/alexfives/CLionProjects/beginners/l2_stl">
 			<Option target="beginners"/>
 		</Unit>
 		<Unit filename="/home/alexfives/CLionProjects/beginners/l3_functions">
+			<Option target="beginners"/>
+		</Unit>
+		<Unit filename="/home/alexfives/CLionProjects/beginners/l4_pointers">
 			<Option target="beginners"/>
 		</Unit>
 		<Unit filename="/home/alexfives/CLionProjects/beginners/main.cpp">

@@ -4,4 +4,5 @@
 CMakeFiles/beginners.dir/hello_world.cpp.o: \
  ../hello_world.cpp
 CMakeFiles/beginners.dir/main.cpp.o: \
+ ../l1_syntax/homework_solution.h \
  ../main.cpp
