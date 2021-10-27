@@ -10,6 +10,7 @@ namespace Queue {
         Node *next = nullptr;
     };
 
+    // nodes in function parameters declaration mean, that we work with reference to the pointer and don't copy it
     template<typename T>
     void print(Node*&);
 
