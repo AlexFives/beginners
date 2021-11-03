@@ -49,7 +49,9 @@ void references() {
 }
 
 void void_pointer();
+
 void pointer2pointer2pointer();
+
 void pointer2pointer();
 
 void pointers() {
@@ -109,7 +111,8 @@ void pointer2pointer2pointer() {
     printf("dereferencing of p_p_p_num (*p_p_p_num): 0x%x\n", *p_p_p_num); // p_p_num or &p_num
     printf("address to dereferenced p_p_p_num (&*p_p_p_num): 0x%x\n", &*p_p_p_num); // p_p_p_num or &p_p_num
     printf("double dereferencing of p_p_p_num (**p_p_p_num): 0x%x\n", **p_p_p_num); // *p_p_num or p_num or &num
-    printf("address to double dereferenced p_p_p_num (&**p_p_p_num): 0x%x\n", &**p_p_p_num); // &*p_p_num or p_p_num or &p_num
+    printf("address to double dereferenced p_p_p_num (&**p_p_p_num): 0x%x\n",
+           &**p_p_p_num); // &*p_p_num or p_p_num or &p_num
     printf("triple dereferencing of p_p_p_num (***p_p_p_num): %d\n", ***p_p_p_num); // **p_p_num or *p_num or num or 322
     printf("address to triple dereferenced p_p_p_num (&***p_p_p_num): 0x%x\n", &***p_p_p_num);
     // &**p_p_num or *p_p_num or &*p_num or p_num or &num
@@ -123,11 +126,24 @@ void void_pointer() {
     p_void = &num;
     printf("p_void: 0x%x\n", p_void); // &num
     printf("p_void address (&p_void): 0x%x\n", &p_void); // 0x...
-    printf("dereferencing of p_void (*(TYPE*)p_void): %d\n", *(int*)p_void); // num
+    printf("dereferencing of p_void (*(TYPE*)p_void): %d\n", *(int *) p_void); // num
+    printf("\n");
+}
+
+inline int max_number(const int &a, const int &b) { return a > b ? a : b; }
+
+void func_pointers() {
+    printf("\n#POINTER TO FUNCTION\n");
+    int (*func_ptr)(const int &, const int &);
+    func_ptr = max_number;
+    int a = 1, b = 2;
+    int max_a_b = func_ptr(a, b);
+    printf("Max of (%d, %d) is %d\n", a, b, max_a_b);
     printf("\n");
 }
 
 void custom_cstyle_stack();
+
 void custom_cstyle_queue();
 
 void dynamic_memory_allocation() {
@@ -232,9 +248,45 @@ void custom_cstyle_queue() {
     delete node;
 }
 
+void arrays_and_pointers() {
+    printf("\nARRAYS AND POINTERS\n");
+    const int n = 5;
+    int array[n] = {1, 2, 3, 4, 5};
+    int *array_ptr = array; // = &array doesn't work!
+    printf("Printing [1, 5] with step 1:\n");
+    for (int i = 0; i < n; i++) {
+        printf("%d ", *array_ptr);
+        array_ptr++; // to the next memory cell with step equals int_size
+    }
+    array_ptr -= n;
+    printf("\n");
+    printf("Printing [1, 5] with step 2:\n");
+    for (int i = 0; i < n; i += 2) {
+        printf("%d ", *array_ptr);
+        array_ptr += 2; // to the next memory cell with step equals 2 * int_size
+    }
+    printf("\n");
+}
+
+void arrays_and_pointers_2() {
+    int n = 10;
+    int *dynamic_array = new int[n]{1, 2, 3, 4, 5, 6, 7, 8, 9, 10};
+    printf("Using pointer iterator:\n");
+    for (int *iter = dynamic_array; iter < dynamic_array + n; iter++) printf("%d ", *iter);
+    printf("\n");
+    for (int *iter = dynamic_array; iter < dynamic_array + n; iter++) *iter = (int) (dynamic_array + n - iter);
+    // setting new values
+    for (int *iter = dynamic_array; iter < dynamic_array + n; iter++) printf("%d ", *iter);
+    printf("\n");
+    delete[] dynamic_array; // delete dynamic_array; deletes only the first memory cell
+}
+
 void show() {
     variables();
     references();
     pointers();
+    func_pointers();
     dynamic_memory_allocation();
+    arrays_and_pointers();
+    arrays_and_pointers_2();
 }
