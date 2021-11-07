@@ -8,8 +8,8 @@ template<typename T>
 void quicksort(int low, int high, T &array) {
     int left = low;
     int right = high - 1;
-    int middle = (low + high) / 2;
-    do {
+    auto middle = array[(left + right) / 2];
+    while (left <= right) {
         while (array[left] < middle) left++;
         while (array[right] > middle) right--;
         if (left <= right) {
@@ -17,10 +17,10 @@ void quicksort(int low, int high, T &array) {
             left++;
             right--;
         }
-    } while (left <= right);
+    }
 
     if (right > low) quicksort(low, right + 1, array);
-    if (left < high) quicksort(left + 1, high, array);
+    if (left < high) quicksort(left, high, array);
 }
 
 template<typename T, typename ARRAY>
@@ -57,9 +57,10 @@ uint64_t fib_O1(int n) {
     return (uint64_t) round(pow(phi, n) / sqrt(5));
 }
 
-int main() {
-//    int a[10] = {9, 7, 8, 6, 4, 5, 3, 2, 0, 1};
-//    vector<int> a = {9, 7, 8, 6, 4, 5, 3, 2, 0, 1};
+//int main() {
+////    int a[10] = {9, 7, 8, 6, 4, 5, 3, 2, 0, 1};
+//    int a[10] = {9, 9, 9, 8, 2, 3, 5, 1, 2, 0};
+////    vector<int> a = {9, 7, 8, 6, 4, 5, 3, 2, 0, 1};
 //    quicksort(0, 10, a);
 //    for (int item : a) cout << item << ' ';
 //    cout << endl;
@@ -75,5 +76,5 @@ int main() {
 //        cout << fib << ' ';
 //    }
 //    cout << endl;
-    int a[2] = {}
-}
+//    int a[2] = {}
+//}
