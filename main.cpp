@@ -2,6 +2,7 @@
 #include "l2_stl/launch.h"
 #include "l3_functions/launch.h"
 #include "l4_pointers/launch.h"
+#include "l5_oop/launch.h"
 
 
 int main() {
@@ -9,5 +10,6 @@ int main() {
 //    launch2();
 //    launch3();
 //    launch4();
+    launch5();
     return 0;
 }
