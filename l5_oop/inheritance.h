@@ -26,7 +26,7 @@ public:
     // destructor is not necessary, if we don't need specially delete something
 
     void go() {
-        std::printf("Whrum, whrum, uuuuuuuuuuuuuuuu...");
+        std::printf("Whrum, whrum, uuuuuuuuuuuuuuuu...\n");
     }
 
     void getInfo() {
